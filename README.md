@@ -5,9 +5,13 @@ Home: https://github.com/21cmFAST/21cmFAST
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/21cmfast-feedstock/blob/master/LICENSE.txt)
 
 Summary: A semi-numerical cosmological simulation code for the 21cm signal
+
+Development: https://github.com/21cmFAST/21cmFAST
+
+Documentation: https://21cmFAST.readthedocs.io/
 
 21cmFAST provides a simple and fast simulation package for the cosmological
 21cm signal as either coeval cubes or full lightcones.
