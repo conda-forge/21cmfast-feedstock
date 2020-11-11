@@ -5,9 +5,13 @@ Home: https://github.com/21cmFAST/21cmFAST
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/21cmfast-feedstock/blob/master/LICENSE.txt)
 
 Summary: A semi-numerical cosmological simulation code for the 21cm signal
+
+Development: https://github.com/21cmFAST/21cmFAST
+
+Documentation: https://21cmFAST.readthedocs.io/
 
 21cmFAST provides a simple and fast simulation package for the cosmological
 21cm signal as either coeval cubes or full lightcones.
@@ -52,6 +56,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_64_python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10672&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/21cmfast-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_64_python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10672&branchName=master">
@@ -70,6 +81,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10672&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/21cmfast-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.8.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10672&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/21cmfast-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr>
