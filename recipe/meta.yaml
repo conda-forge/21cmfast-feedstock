@@ -11,10 +11,10 @@ source:
 
 
 build:
-  number: 0
-  script: INC=${PREFIX}/include LIB=${PREFIX}/lib {{ PYTHON }} -m pip install . -vv
-  skip: true  # [win]
-
+  number: 1
+  script: "INC=${PREFIX}/include LIB=${PREFIX}/lib {{ PYTHON }} -m pip install . -vv"
+  skip: True  # [win]
+  
 requirements:
   build:
     - {{ compiler('c') }}
