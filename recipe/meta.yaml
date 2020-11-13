@@ -1,5 +1,5 @@
 {% set name = "21cmFAST" %}
-{% set version = "3.0.2" %}
+{% set version = "3.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6e88960d134e98e4719343d853c63fc3c691438b57b2863f7834f07fae9eab4f
+  sha256: 71e9f8dcdf44da474db27027beab1c6bd1d6fe78782df5782ec6e38ddc424c46
 
 
 build:
@@ -43,7 +43,7 @@ requirements:
     - matplotlib-base
     - fftw
     - gsl
-    
+
 test:
   imports:
     - py21cmfast
