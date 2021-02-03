@@ -29,6 +29,7 @@ requirements:
     - llvm-openmp  # [osx]
     - libgomp      # [linux]
     - libblas
+    - nomkl
   run:
     - python
     - scipy
@@ -43,11 +44,19 @@ requirements:
     - matplotlib-base
     - fftw
     - gsl
+    - nomkl
 
 test:
   imports:
     - py21cmfast
-
+  requires:
+    - pytest
+  source_files:
+    - tests/test_config.py
+    - tests/test_initial_conditions.py
+  commands:
+    - pytest tests/test_config tests/test_initial_conditions.py
+    
 about:
   home: https://github.com/21cmFAST/21cmFAST
   license: MIT
