@@ -50,7 +50,7 @@ test:
   imports:
     - py21cmfast
   commands:
-    - 21cmFAST --help
+    - 21cmfast --help
     
 about:
   home: https://github.com/21cmFAST/21cmFAST
