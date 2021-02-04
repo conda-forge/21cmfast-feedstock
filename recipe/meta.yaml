@@ -11,7 +11,7 @@ source:
 
 
 build:
-  number: 1
+  number: 2
   script: "INC=${PREFIX}/include LIB=${PREFIX}/lib {{ PYTHON }} -m pip install . -vv"
   skip: True  # [win]
   
@@ -29,6 +29,7 @@ requirements:
     - llvm-openmp  # [osx]
     - libgomp      # [linux]
     - libblas
+    - nomkl
   run:
     - python
     - scipy
@@ -43,11 +44,14 @@ requirements:
     - matplotlib-base
     - fftw
     - gsl
+    - nomkl
 
 test:
   imports:
     - py21cmfast
-
+  commands:
+    - 21cmfast --help
+    
 about:
   home: https://github.com/21cmFAST/21cmFAST
   license: MIT
