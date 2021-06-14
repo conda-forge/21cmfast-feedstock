@@ -45,6 +45,7 @@ requirements:
     - fftw
     - gsl
     - nomkl
+    - bidict
 
 test:
   imports:
