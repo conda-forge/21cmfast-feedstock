@@ -1,5 +1,5 @@
 {% set name = "21cmFAST" %}
-{% set version = "3.0.3" %}
+{% set version = "3.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 71e9f8dcdf44da474db27027beab1c6bd1d6fe78782df5782ec6e38ddc424c46
+  sha256: b3d163d2ef5226fd1140fbc14a0189b26ef4965d5ad601e6e9ce8f4ae521417d
 
 
 build:
-  number: 2
-  script: "INC=${PREFIX}/include LIB=${PREFIX}/lib {{ PYTHON }} -m pip install . -vv"
-  skip: True  # [win]
-  
+  number: 0
+  script: INC=${PREFIX}/include LIB=${PREFIX}/lib {{ PYTHON }} -m pip install . -vv
+  skip: true  # [win]
+
 requirements:
   build:
     - {{ compiler('c') }}
@@ -51,7 +51,7 @@ test:
     - py21cmfast
   commands:
     - 21cmfast --help
-    
+
 about:
   home: https://github.com/21cmFAST/21cmFAST
   license: MIT
