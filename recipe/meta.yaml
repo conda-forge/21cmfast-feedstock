@@ -11,7 +11,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   script: INC=${PREFIX}/include LIB=${PREFIX}/lib {{ PYTHON }} -m pip install . -vv
   skip: true  # [win]
 
