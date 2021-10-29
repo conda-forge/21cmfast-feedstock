@@ -1,5 +1,5 @@
 {% set name = "21cmFAST" %}
-{% set version = "3.1.2" %}
+{% set version = "3.1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 514ba441cd435662e1adf4a7eee03dbcf1784665a6e66e8f4156074ab473704b
+  sha256: 4c3243534f1e66c2ad600a7836b20aef13ad159f3d93b5c3751308b2671ed0a9
 
 
 build:
-  number: 1
+  number: 0
   script: INC=${PREFIX}/include LIB=${PREFIX}/lib {{ PYTHON }} -m pip install . -vv
   skip: true  # [win]
 
