@@ -1,5 +1,5 @@
 {% set name = "21cmFAST" %}
-{% set version = "3.1.3" %}
+{% set version = "3.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4c3243534f1e66c2ad600a7836b20aef13ad159f3d93b5c3751308b2671ed0a9
+  sha256: b76cc0e7afe90712b17fbc400b789e0908bfc0c411c71db9b583a76fda7f20a5
 
 
 build:
