@@ -46,6 +46,8 @@ requirements:
     - gsl
     - nomkl
     - bidict
+    - psutil
+    - setuptools_scm
 
 test:
   imports:
