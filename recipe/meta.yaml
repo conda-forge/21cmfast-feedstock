@@ -46,6 +46,7 @@ requirements:
     - gsl
     - nomkl
     - bidict
+    - psutil
 
 test:
   imports:
