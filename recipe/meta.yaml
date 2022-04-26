@@ -11,8 +11,11 @@ source:
 
 
 build:
+  
   number: 0
-  script: INC=${PREFIX}/include LIB=${PREFIX}/lib {{ PYTHON }} -m pip install . -vv
+  script:
+    - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
+    - INC=${PREFIX}/include LIB=${PREFIX}/lib {{ PYTHON }} -m pip install . -vv
   skip: true  # [win]
 
 requirements:
