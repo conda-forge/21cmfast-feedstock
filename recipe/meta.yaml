@@ -10,9 +10,11 @@ source:
   sha256: b76cc0e7afe90712b17fbc400b789e0908bfc0c411c71db9b583a76fda7f20a5
 
 
-build:
-  number: 0
-  script: INC=${PREFIX}/include LIB=${PREFIX}/lib {{ PYTHON }} -m pip install . -vv
+build:  
+  number: 1
+  script:
+    - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
+    - INC=${PREFIX}/include LIB=${PREFIX}/lib {{ PYTHON }} -m pip install . -vv
   skip: true  # [win]
 
 requirements:
