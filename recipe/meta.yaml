@@ -1,5 +1,5 @@
 {% set name = "21cmFAST" %}
-{% set version = "3.1.4" %}
+{% set version = "3.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b76cc0e7afe90712b17fbc400b789e0908bfc0c411c71db9b583a76fda7f20a5
+  sha256: 4f71526cf3b24865111cb79828c16af2b5ee1e0f8301b3f5f245d64fa6cba871
 
 
-build:  
-  number: 1
+build:
+  number: 0
   script:
     - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
     - INC=${PREFIX}/include LIB=${PREFIX}/lib {{ PYTHON }} -m pip install . -vv
