@@ -1,11 +1,11 @@
-About 21cmfast
-==============
+About 21cmfast-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/21cmfast-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/21cmFAST/21cmFAST
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/21cmfast-feedstock/blob/main/LICENSE.txt)
 
 Summary: A semi-numerical cosmological simulation code for the 21cm signal
 
