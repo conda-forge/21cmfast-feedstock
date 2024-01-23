@@ -11,7 +11,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   script:
     - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
     - INC=${PREFIX}/include LIB=${PREFIX}/lib {{ PYTHON }} -m pip install . -vv
@@ -22,6 +22,8 @@ requirements:
     - {{ compiler('c') }}
     - llvm-openmp  # [osx]
     - libgomp      # [linux]
+    - python       # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}  # [build_platform != target_platform]
   host:
     - python
     - pip
